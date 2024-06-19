@@ -163,7 +163,7 @@ a {
 }
 
 
-/* Préparation d'une intégration pour le survol version mobile 
+/* Préparation d'une intégration pour la version mobile 
 
 .nav_mobile:hover {
     border-bottom: solid 2px #0065FC;
@@ -173,7 +173,57 @@ a {
 
 */
 
+/* Code pour la partie recherche du projet */
 
+.info_group h1 {
+    font-size: 22px;
+    padding: 0;
+    margin: 0;
+}
+
+.info_group p {
+    font-size: 16px;
+    margin-top: 0;
+}
+
+.info_group {
+    display: flex;
+    flex-direction: column;
+}
+
+.zone_recherche {
+    display: flex;
+}
+
+.zone_recherche_input {
+    border: none;
+    padding: 10px;
+    flex-grow: 1;
+    outline: none;
+    border: 1px solid #f0f0f0;
+}
+
+.icon_zone_recherche {
+    padding: 0 10px;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.zone_recherche_button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    outline: none;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
