@@ -121,20 +121,57 @@ a {
     margin-bottom: 5px;
 }
 
+/* intégration du header Desktop*/
+
 .header {
+    width: 100%;
+    height: 80px;
     display : flex;
     justify-content: space-between;
 }
 
+.logo {
+    display: flex;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    gap: 10px;
+}
+
+.menu {
+    display: flex;
+    padding-left: 50px;
+    margin-right: 50px;
+    justify-content: flex-end;
+}
+
 .menu ul{
+    margin: 0;
+    gap: 68px;
+    padding-top: 10px;
     list-style-type: none;
     display: flex;
+    align-items: flex-start;
 }
+
 
 .menu a:hover {
     border-top: solid 2px #0065FC;
+    padding-top: 10px;
+    color: #0065FC;
 }
 
+
+/* Préparation d'une intégration pour le survol version mobile 
+
+.nav_mobile:hover {
+    border-bottom: solid 2px #0065FC;
+    padding-bottom: 10px;
+    color: #0065FC;
+}
+
+*/
 
 
 
