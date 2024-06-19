@@ -121,6 +121,20 @@ a {
     margin-bottom: 5px;
 }
 
+.header {
+    display : flex;
+    justify-content: space-between;
+}
+
+.menu ul{
+    list-style-type: none;
+    display: flex;
+}
+
+.menu a:hover {
+    border-top: solid 2px #0065FC;
+}
+
 
 
 
