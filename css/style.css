@@ -366,6 +366,11 @@ a {
     flex-grow: 1;
 }
 
+.load_more {
+    font-size: 18px;
+    font-weight: 700;
+}
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
