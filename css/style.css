@@ -408,6 +408,34 @@ a {
     gap: 10px;
 }
 
+/* Intégration du footer */
+
+.frame_footer {
+    display: flex;
+    background-color: #D9D9D9;
+}
+
+.lien_footer {
+    padding: 20px;
+    gap: 15px;
+    width: 33%;
+}
+
+.lien_footer h3 {
+    font-size: 18px;
+    font-weight: 700;
+}
+.lien_footer a {
+    font-size: 14px;
+    font-weight: 400;
+}
+.lien_footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
