@@ -266,6 +266,10 @@ a {
   border-top-right-radius: 15px;
 }
 
+.search-bar-button-mobile {
+    display: none;
+}
+
 /* Mise en place de partie filtre du projet */
 
 .filter-bar {
@@ -502,8 +506,15 @@ a {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) and (min-width: 320px) {
 
+/* Modification d'éléments "principaux" */
+
     body {
         width: 100%;
+    }
+
+    .main-container {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
 /* Mise en place du header Version Mobile */
@@ -547,6 +558,7 @@ a {
     .menu li {
         display: flex;
         justify-content: center;
+        padding-bottom: 10px;
         width: 50%;
     }
 
@@ -560,4 +572,38 @@ a {
         border-top: none;
         padding-top: 0px;
     }
+/* Mise en place de la version mobile pour l'info-group */
+
+    .info-group {
+        width: 100%;
+    }
+
+    /* modification de la search-bar-mobile */
+
+    .search-bar-button {
+        display: none;
+    }
+
+    .search-bar-button-mobile {
+        display: flex;
+        height: 49px;
+        padding: 15px 15px 15px 15px;
+        border: 1px solid #0065FC;
+        gap: 10px;
+        border-radius: 15px;
+        background-color: #0065fc;
+        border: none;
+        cursor: pointer;
+        box-shadow: 0px 4px 4px 0px #00000040;
+    }
+
+    .search-bar-button-mobile i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 17px;
+        height: 17px;
+        color: #FFFFFF;
+    }
+    
 }
