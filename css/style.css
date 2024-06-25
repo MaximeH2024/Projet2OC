@@ -9,7 +9,8 @@
 .body {
   display: flex;
   flex-direction: column;
-  width: 1440px;
+  max-width: 1440px;
+  width: 100%;
   gap: 30px;
 }
 
@@ -183,22 +184,14 @@ a {
   color: #0065fc;
 }
 
-/* Préparation d'une intégration pour la version mobile 
-
-.nav_mobile:hover {
-    border-bottom: solid 2px #0065FC;
-    padding-bottom: 10px;
-    color: #0065FC;
-}
-
-*/
-
 /* Code pour la partie recherche du projet */
 
 .headline h1 {
-  font-size: 22px;
-  padding: 0;
-  margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 22px;
+    padding: 0;
+    margin: 0;
 }
 
 .headline p {
@@ -212,39 +205,38 @@ a {
   gap: 8px;
 }
 
-.info_group {
+.info-group {
   display: flex;
   flex-direction: column;
   width: 1340px;
   gap: 35px;
 }
 
-.search_bar {
+.search-bar {
   display: flex;
   width: 377px;
   height: 49px;
 }
 
-.zone_recherche_form {
+.search-bar-form {
   display: flex;
 }
 
-.zone_recherche_input {
+.search-bar-input {
   padding: 10px;
   border: 1px solid #f0f0f0;
   flex-grow: 1;
 }
 
-.zone_recherche_input::placeholder {
+.search-bar-input::placeholder {
   font-size: 16px;
   font-weight: bold;
   color: black;
 }
 
-.icon_zone_recherche {
+.icon-search-bar {
   width: 50px;
   height: 49px;
-  gap: 0px;
   border-radius: 15px 0px 0px 15px;
   border: 1px 0px 0px 0px;
   opacity: 0px;
@@ -255,27 +247,28 @@ a {
   justify-content: center;
 }
 
-.icon_zone_recherche i {
+.icon-search-bar i {
   width: 14px;
   height: 18px;
   color: #000000;
 }
 
-.zone_recherche_button {
+.search-bar-button {
   font-weight: bold;
   background-color: #007bff;
   color: white;
   border: none;
   padding: 10px 20px;
   cursor: pointer;
-  outline: none;
+  font-size: 18px;
+  font-weight: 700;
   border-bottom-right-radius: 15px;
   border-top-right-radius: 15px;
 }
 
 /* Mise en place de partie filtre du projet */
 
-.filter_bar {
+.filter-bar {
   display: flex;
   height: 50px;
   width: auto;
@@ -292,14 +285,14 @@ a {
   align-items: center;
 }
 
-.filter_title {
+.filter-title {
   display: flex;
   align-items: center;
   font-size: 17px;
   font-weight: bold;
 }
 
-.filter_text {
+.filter-text {
   font-size: 17px;
   font-weight: bold;
 }
@@ -308,16 +301,16 @@ a {
   background-color: #deebff;
 }
 
-/* Mise en place de l'info_bar */
+/* Mise en place de l'info-bar */
 
-.info_bar {
+.info-bar {
   display: flex;
   align-items: center;
   height: 24px;
   gap: 10px;
 }
 
-.icon_container {
+.icon-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -327,7 +320,7 @@ a {
   border-radius: 50%;
 }
 
-.icon_container i {
+.icon-container i {
   font-size: 10px;
   width: 4px;
   height: 10px;
@@ -464,40 +457,107 @@ a {
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
-@media (max-width: 1024px) {
-  .hebergements-and-populaires {
-    flex-direction: column;
-  }
+@media (max-width: 1024px) and (min-width: 768px) {
 
-  .hebergements {
-    width: 100%;
-  }
+    body {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 30px;
+        justify-content: center;
+    }
 
-  .populaires {
-    width: 100%;
-    margin-top: 50px;
-  }
+    .hebergements-and-populaires {
+        flex-direction: column;
+    }
 
-  .populaires-cards {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
+    .hebergements {
+        width: 100%;
+    }
 
-  .populaires-cards a {
-    width: 30%;
-  }
+    .populaires {
+        width: 100%;
+        margin-top: 50px;
+    }
 
-  .populaires-cards .card-title {
-    font-size: 14px;
-  }
+    .populaires-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
-  .populaires-cards .card-subtitle {
-    font-size: 13px;
-  }
+    .populaires-cards a {
+        width: 30%;
+    }
+
+    .populaires-cards .card-title {
+        font-size: 14px;
+    }
+
+    .populaires-cards .card-subtitle {
+        font-size: 13px;
+    }
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
-  /* ... */
+@media (max-width: 767.98px) and (min-width: 320px) {
+
+    body {
+        width: 100%;
+    }
+
+/* Mise en place du header Version Mobile */
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 2px solid #f2f2f2;
+        padding-bottom: 10px;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        width: 61.09px;
+        height: 19px;
+        gap: 0px;
+        padding: 30px 0px 0px 0px;
+    }
+
+    .logo img {
+        width: 61.09px;
+        height: 19px;
+    }
+
+    .menu {
+        display: flex;
+        width: 100%;
+    }
+
+    .menu ul {
+        display: flex;
+        padding-left: 0;
+        width: 100%;
+        justify-content: space-between;
+        gap: 0px;
+
+    }
+
+    .menu li {
+        display: flex;
+        justify-content: center;
+        width: 50%;
+    }
+
+    .menu li:hover {
+        border-bottom: 2px solid #0065fc;
+        padding-bottom: 10px;
+        color: #0065fc;
+      }
+    
+    .menu a:hover {
+        border-top: none;
+        padding-top: 0px;
+    }
 }
