@@ -272,11 +272,18 @@ a {
 
 /* Mise en place de partie filtre du projet */
 
+
+
 .filter-bar {
   display: flex;
   height: 50px;
   width: auto;
   gap: 15px;
+}
+
+.filter-frame-mobile {
+    display: flex;
+    gap: 15px;
 }
 
 .filter {
@@ -606,4 +613,34 @@ a {
         color: #FFFFFF;
     }
     
+    /* Modification filter-bar */
+
+
+    .filter-bar {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .filter-frame-mobile {
+        display: flex;
+        flex-wrap: wrap;
+        height: 100%;
+    }
+
+    /* min-width à améliorer */
+
+    .filter {
+        display: flex;
+        width: 25%;
+        height: 50px;
+        min-width: 90px;
+    }
+
+    .filter-text {
+        font-size: 14px;
+        font-weight: 700;
+    }
+    
+/* mise en place de la version mobile pour la partie hebergement-and-populaires */
 }
