@@ -339,20 +339,20 @@ a {
 
 /* Mise en place des cards hébergements */
 
-.hebergements_frame {
+.hebergements-frame {
   display: flex;
   gap: 30px;
 }
 
-.hebergements_cards img {
+.hebergements-cards img {
   height: 124px;
 }
 
-.hebergements_cards {
+.hebergements-cards {
   width: 33%;
 }
 
-.hebergements_card_content {
+.hebergements-card-content {
   display: flex;
   flex-direction: column;
   height: 67%;
@@ -360,20 +360,20 @@ a {
   gap: 8px;
 }
 
-.hebergements_card_content .hebergements_card_subtitle {
+.hebergements-card-content .hebergements-card-subtitle {
   margin: 0;
 }
 
-.hebergements_card_content .hebergements_card_title {
+.hebergements-card-content .hebergements-card-title {
   margin-top: 5px;
   margin-bottom: 4px;
 }
 
-.hebergements_card_title {
+.hebergements-card-title {
   font-size: 16px;
 }
 
-.card_hebergement {
+.card-hebergement {
   background-color: white;
   border-radius: 20px;
   padding: 5px;
@@ -383,7 +383,7 @@ a {
   flex-direction: column;
 }
 
-.card_hebergement img {
+.card-hebergement img {
   width: 100%;
   height: 124px;
   object-fit: cover;
@@ -392,7 +392,7 @@ a {
   flex-shrink: 0;
 }
 
-.hebergements_card_content {
+.hebergements-card-content {
   flex-grow: 1;
 }
 
@@ -519,9 +519,9 @@ a {
         width: 100%;
     }
 
+
     .main-container {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding: 0;
     }
 
 /* Mise en place du header Version Mobile */
@@ -583,6 +583,8 @@ a {
 
     .info-group {
         width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     /* modification de la search-bar-mobile */
@@ -628,13 +630,14 @@ a {
         height: 100%;
     }
 
-    /* min-width à améliorer */
+    /* width à améliorer */
 
     .filter {
         display: flex;
-        width: 25%;
         height: 50px;
+        max-width: 100px;
         min-width: 90px;
+        padding: 4px 10px 4px 10px;
     }
 
     .filter-text {
@@ -643,4 +646,35 @@ a {
     }
     
 /* mise en place de la version mobile pour la partie hebergement-and-populaires */
+
+    .hebergements-and-populaires {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .populaires {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hebergements-and-populaires section {
+        border-radius: 0px;
+    }
+
+    .hebergements {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: #FFFFFF !important;
+    }
+
+    .hebergements-frame {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hebergements-cards {
+        width: 100%;
+    }
 }
