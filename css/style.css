@@ -440,26 +440,26 @@ a {
 
 /* Intégration du footer */
 
-.frame_footer {
+.frame-footer {
   display: flex;
   background-color: #f2f2f2;
 }
 
-.lien_footer {
+.lien-footer {
   padding: 20px;
   gap: 15px;
   width: 33%;
 }
 
-.lien_footer h3 {
+.lien-footer h3 {
   font-size: 18px;
   font-weight: 700;
 }
-.lien_footer a {
+.lien-footer a {
   font-size: 14px;
   font-weight: 400;
 }
-.lien_footer ul {
+.lien-footer ul {
   list-style-type: none;
   padding: 0;
 }
@@ -697,4 +697,16 @@ a {
         object-fit: cover;
     }
 
+/* Mise en place du footer pour la version mobile */
+
+    .frame-footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .lien-footer {
+        width: 100%;
+        padding-bottom: 0px;
+        padding-top: 10px;
+    }
 }
