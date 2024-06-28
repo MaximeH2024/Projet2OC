@@ -180,8 +180,8 @@ a {
 }
 
 .menu a:hover {
-  border-top: solid 2px #0065fc;
-  padding-top: 10px;
+  border-bottom: solid 2px #0065fc;
+  padding-bottom: 10px;
   color: #0065fc;
 }
 
@@ -510,6 +510,21 @@ a {
   }
 }
 
+/* Mise en place de la version tablette pour la zone_activites */
+
+
+  .card-section-activites {
+    display: flex;
+    flex-direction: column;
+    width: calc(25% - 26.25px);
+    height: 25%;
+  }
+
+  .card-section-activites img {
+    height: 141px;
+    object-fit: cover;
+  }
+
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) and (min-width: 320px) {
   /* Modification d'éléments "principaux" */
@@ -581,6 +596,8 @@ a {
   .menu a:hover {
     border-top: none;
     padding-top: 0px;
+    padding-bottom: 0px;
+    border-bottom: none;
   }
   /* Mise en place de la version mobile pour l'info-group */
 
@@ -597,10 +614,7 @@ a {
   }
 
   .search-bar-input {
-    border-right: none;
-    border-left: none;
-    border-top: 1px solid #f0f0f0;
-    border-bottom: 1px solid #f0f0f0;
+    border: 1px solid #f2f2f2;
   }
 
   .search-bar-button-mobile {
@@ -637,8 +651,6 @@ a {
     flex-wrap: wrap;
     height: 100%;
   }
-
-  /* width à améliorer */
 
   .filter {
     display: flex;
