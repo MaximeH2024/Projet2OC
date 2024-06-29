@@ -518,6 +518,7 @@ a {
     flex-direction: column;
     width: calc(25% - 26.25px);
     height: 25%;
+    box-shadow: 0px 3px 15px 0px #0000001A;
   }
 
   .card-section-activites img {
