@@ -209,9 +209,11 @@ a {
 .info-group {
   display: flex;
   flex-direction: column;
-  width: 1340px;
+  max-width: 1340px;
   gap: 35px;
 }
+
+/* Mise en place de la search-bar */
 
 .search-bar {
   display: flex;
@@ -411,21 +413,22 @@ a {
 .frame-section-activites {
   display: flex;
   justify-content: space-between;
+  height: 439px;
   gap: 30px;
 }
 
 .card-section-activites img {
     object-fit: cover;
-  height: 380px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+    height: 380px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .card-section-activites {
     width: calc(25% - 26.25px);
   display: flex;
   flex-direction: column;
-  height: 439px;
+  height: auto;
   border-radius: 20px;
   box-shadow: 0px 3px 15px 0px #0000001a;
 }
@@ -469,7 +472,7 @@ a {
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
-@media (max-width: 1024px) and (min-width: 768px) {
+@media (max-width: 1024px) {
   body {
     display: flex;
     flex-direction: column;
@@ -508,11 +511,13 @@ a {
   .populaires-cards .card-subtitle {
     font-size: 13px;
   }
-}
+
 
 /* Mise en place de la version tablette pour la zone_activites */
 
-
+    .frame-section-activites {
+        height: auto;
+    }
   .card-section-activites {
     display: flex;
     flex-direction: column;
@@ -525,18 +530,19 @@ a {
     height: 141px;
     object-fit: cover;
   }
-
+}
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) and (min-width: 320px) {
+@media (max-width: 767.98px) {
   /* Modification d'éléments "principaux" */
 
   body {
     display: flex;
-    width: 100%;
+    max-width: 100%;
   }
 
   .body {
     align-items: center;
+    max-width: 100%;
   }
 
   .main-container {
@@ -603,7 +609,7 @@ a {
   /* Mise en place de la version mobile pour l'info-group */
 
   .info-group {
-    width: 100%;
+    max-width: 100%;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -708,6 +714,7 @@ a {
   .frame-section-activites {
     display: flex;
     flex-direction: column;
+    height: auto;
   }
 
   .card-section-activites {
@@ -730,8 +737,16 @@ a {
   }
 
   .lien-footer {
-    width: 100%;
+    max-width: 100%;
     padding-bottom: 0px;
     padding-top: 10px;
   }
+
+  /* Rectification de la zone les plus populaires */
+    .populaires-cards a {
+        width: 100%;
+    }
+    .populaires-cards {
+        flex-direction: column;
+    }
 }
