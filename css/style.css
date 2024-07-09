@@ -217,7 +217,7 @@ a {
 
 .search-bar {
   display: flex;
-  width: 377px;
+  max-width: 377px;
   height: 49px;
 }
 
