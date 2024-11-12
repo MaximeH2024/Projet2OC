@@ -1,21 +1,22 @@
-Projet 2 : 
-Créez la page d'accueil d'une agence de voyage avec HTML & CSS
+![Logo Booki](../images/logo/Booki.png) <!-- Utilisez le bon chemin vers l'image du logo -->
 
-Description :
-Ce projet consiste à créer la page d'accueil d'une agence de voyage en utilisant HTML et CSS. L'objectif principal est de développer une interface web responsive qui s'adapte aux écrans mobiles, tablettes et ordinateurs, en utilisant les maquettes Figma comme référence.
+# Projet 2 : Créez la page d'accueil d'une agence de voyage avec HTML & CSS
 
-Objectifs :
+## Description
+Ce projet consiste à créer la page d'accueil d'une agence de voyage en utilisant HTML et CSS.  
+L'objectif principal est de développer une interface web responsive qui s'adapte aux écrans mobiles, tablettes et ordinateurs, en utilisant les maquettes Figma comme référence.
 
-Créer un site web statique en HTML et CSS.
-Intégrer des maquettes Figma pour un design responsive.
-Comprendre les bases de la structuration et de la stylisation du code pour le web.
-Compétences acquises :
+## Objectifs
+- Créer un site web statique en HTML et CSS.
+- Intégrer des maquettes Figma pour un design responsive.
+- Comprendre les bases de la structuration et de la stylisation du code pour le web.
 
-Maîtrise du HTML et CSS.
-Création d'interfaces web responsive.
-Capacité à convertir des maquettes en code.
-Technologies et Outils :
+## Compétences acquises
+- Maîtrise du HTML et CSS.
+- Création d'interfaces web responsive.
+- Capacité à convertir des maquettes en code.
 
-HTML5
-CSS3
-Figma pour les maquettes
+## Technologies et Outils
+- **HTML5**
+- **CSS3**
+- **Figma** pour les maquettes
