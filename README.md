@@ -4,8 +4,7 @@
 Créez la page d'accueil d'une agence de voyage avec HTML & CSS
 
 ## Description
-Ce projet consiste à créer la page d'accueil d'une agence de voyage en utilisant HTML et CSS.  
-L'objectif principal est de développer une interface web responsive qui s'adapte aux écrans mobiles, tablettes et ordinateurs, en utilisant les maquettes Figma comme référence.
+Ce projet consiste à développer une page d'accueil professionnelle pour une agence de voyage en utilisant uniquement HTML et CSS. Le site est entièrement responsive, offrant une expérience fluide et cohérente sur mobile, tablette et ordinateur. Les maquettes Figma fournies ont été fidèlement reproduites, garantissant un design moderne et attractif qui s'adapte à tous les types d'écrans.
 
 ## Objectifs
 - Créer un site web statique en HTML et CSS.
